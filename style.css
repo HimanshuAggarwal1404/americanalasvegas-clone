@@ -1,38 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Parisienne&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.website{
+.background{
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: url(Assets/about_us_back.jpg) no-repeat fixed center;
+    background-size: cover;
+    z-index: -3;
+}
+.background::-webkit-scrollbar {
+    display: none;
+  }
+.website {
     overflow-y: scroll;
     height: 100vh;
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
     background-color: white;
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     transition: 0.4s ease;
 }
-.content{
+
+.content {
     width: 100vw;
     z-index: 1;
 }
-.abc{
+
+.abc {
     width: 100vw;
     height: 50vh;
     background-color: red;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +57,13 @@ body{
 }
 
 
-.logo img{
+.logo img {
     width: 100%;
     height: 100%;
     transition: 0.4s ease;
 }
-.navbar{
+
+.navbar {
     margin-left: 30vw;
     margin-right: 3vw;
     height: 40%;
@@ -58,32 +74,107 @@ body{
     font-size: 1rem;
     font-family: 'DM Serif Display', serif;
 }
-.nav8{
+
+.nav8 {
     color: #a31521;
     font-weight: bolder;
 }
-.nav1,.nav2,.nav3,.nav4,.nav5,.nav6,.nav7,.nav9,.nav10{
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6,
+.nav7,
+.nav9,
+.nav10 {
     color: #002e48;
     transition: 0.4s ease;
 }
-.nav1:hover,.nav2:hover,.nav3:hover,.nav4:hover,.nav5:hover,.nav6:hover,.nav7:hover{
+
+.nav1:hover,
+.nav2:hover,
+.nav3:hover,
+.nav4:hover,
+.nav5:hover,
+.nav6:hover,
+.nav7:hover {
     color: #a31521;
     cursor: pointer;
 }
-.nav9:hover,.nav10:hover{
-    cursor:pointer;
+
+.nav9:hover,
+.nav10:hover {
+    cursor: pointer;
     background-color: #a31521;
-    color:white;
+    color: white;
 }
-.nav9,.nav10{
-    padding:5px 10px;
+
+.nav9,
+.nav10 {
+    padding: 5px 10px;
 }
-#video1{
+
+#video1 {
     width: 100%;
     overflow: hidden;
 }
-.redbox{
+
+.box {
+    height: 10vh;
+}
+
+.redbox {
     width: 100vw;
-    height: 20vh;
+    height: 12vh;
     background-color: #a31521;
+    position: relative;
+    top: -2vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.redbox i:hover {
+    color: #002e48;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.boxpattern {
+    width: 100vw;
+    z-index: 3;
+
+}
+
+.cls-1 {
+    fill: #a31521;
+    z-index: 3;
+}
+
+.aboutus{
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: rgb(215, 234, 254);
+    z-index: -1;
+    position: relative;
+    top: -2vh;
+}
+.aboutus-img{
+    width: 50%;
+    height: 60vh;
+    background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/about_us_left_1.jpg);
+    background-size: cover;
+}
+.aboutus-text{
+    width: 50%;
+    background: rgba(250,250,250,0);
+    height: 60vh;
 }
