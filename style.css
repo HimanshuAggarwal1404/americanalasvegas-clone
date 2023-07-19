@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Parisienne&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.website{
+    overflow-y: scroll;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    transition: 0.4s ease;
+}
+.content{
+    width: 100vw;
+    z-index: 1;
+}
+.abc{
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 15vw;
+    object-fit: contain;
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease;
+}
+.navbar{
+    margin-left: 30vw;
+    margin-right: 3vw;
+    height: 40%;
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'DM Serif Display', serif;
+}
+.nav8{
+    color: #a31521;
+    font-weight: bolder;
+}
+.nav1,.nav2,.nav3,.nav4,.nav5,.nav6,.nav7,.nav9,.nav10{
+    color: #002e48;
+    transition: 0.4s ease;
+}
+.nav1:hover,.nav2:hover,.nav3:hover,.nav4:hover,.nav5:hover,.nav6:hover,.nav7:hover{
+    color: #a31521;
+    cursor: pointer;
+}
+.nav9:hover,.nav10:hover{
+    cursor:pointer;
+    background-color: #a31521;
+    color:white;
+}
+.nav9,.nav10{
+    padding:5px 10px;
+}
+#video1{
+    width: 100%;
+    overflow: hidden;
+}
+.redbox{
+    width: 100vw;
+    height: 20vh;
+    background-color: #a31521;
+}
