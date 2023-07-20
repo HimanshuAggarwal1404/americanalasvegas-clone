@@ -160,7 +160,10 @@ body {
     position: relative;
     top: -4vh;
     z-index: 3;
+}
+.invert{
     transform: rotateY(180deg) rotateX(180deg);
+
 }
 .aboutus{
     display: flex;
@@ -284,6 +287,22 @@ body {
     width: 40vw;
     height: 100%;
     background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/about_us_right.jpg) no-repeat;
+    z-index: 10;
+    background-size: contain;
+}
+.party-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.party-img-imgbox{
+    width: 40vw;
+    height: 100%;
+    background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/about_us_left_2.jpg) no-repeat;
     z-index: 10;
     background-size: contain;
 }
