@@ -47,7 +47,7 @@ body {
     background-color: red;
 }
 
-.logo {
+.logo1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body {
 }
 
 
-.logo img {
+.logo1 img {
     width: 100%;
     height: 100%;
     transition: 0.4s ease;
@@ -178,8 +178,7 @@ body {
     height: 60vh;
     background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/about_us_left_1.jpg);
     background-size: cover;
-    z-index: -1;
-    transform: translateX(-50vw);
+    z-index: 1;
     transition: 0.8s ease;
 }
 .aboutus-text{
@@ -191,35 +190,45 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 0.8s ease;
 
+
+}
+.hideright{
+    transform: translateX(-50vw);
 }
 .show{
     transform: translateX(0vh);
 }
-.aboutus-text-heading{
+.heading{
     color: black;
     font-family: 'DM Serif Display', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.8s ease;
+
 }
-.aboutus-text-logo{
+.logo{
     background:url(https://static.spotapps.co/web/americanalasvegas--com/custom/title_decoration.png) no-repeat;
     width: 20vw;
     height: 5vh;
     background-size: cover;
     
 }
-.aboutus-text-desc{
+.desc{
     width: 80%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.8s ease;
+    z-index: 0;
+
 }
-.aboutus-text-button a{
+.btun a{
     text-decoration: none;
 }
 .btn1{
@@ -242,4 +251,39 @@ body {
     cursor: pointer;
     border: 2px solid #a31521;
 
+}
+.catering{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catering-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.catering-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.catering-text-italics{
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    color:#002e48;
+}
+.catering-img-imgbox{
+    width: 40vw;
+    height: 100%;
+    background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/about_us_right.jpg) no-repeat;
+    z-index: 10;
+    background-size: contain;
 }

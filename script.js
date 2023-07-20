@@ -24,11 +24,12 @@ const observer=new IntersectionObserver((entries)=>{
 entries.forEach((entry)=>{
 console.log(entry);
 if (entry.isIntersecting){
+    entry.target.classList.remove("hideright");
     entry.target.classList.add("show");
 }
 });
 
 })
 
-const hiddenElements=document.querySelectorAll(".aboutus-img");
+const hiddenElements=document.querySelectorAll(".abt");
 hiddenElements.forEach((el)=>observer.observe(el));
