@@ -1,0 +1,19 @@
+.carousel{
+    width: 400vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    position: relative;
+    top: -15vh;
+
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.slide1{
+    background:url(https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/2c/a177c9479648c99cc3cdc58d5cc96d/:original) no-repeat;
+    background-size: cover;
+}
+
