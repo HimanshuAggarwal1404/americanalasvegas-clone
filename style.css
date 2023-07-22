@@ -151,7 +151,8 @@ body {
 }
 
 .boxpattern {
-    width: 100vw;
+    width: 100vw !important;
+    object-fit: contain;
     z-index: 3;
 }
 .cls-1 {
@@ -162,9 +163,18 @@ body {
     fill: white;
 }
 .boxpattern2{
+    width: 100vw !important;
     position: relative;
     top: -4vh;
     z-index: 3;
+    object-fit:contain ;
+}
+.boxpattern3{
+    width: 100vw !important;
+    position: relative;
+    top: 3vh;
+    z-index: 3;
+    object-fit:contain ;
 }
 .invert{
     transform: rotateY(180deg) rotateX(180deg);
@@ -252,13 +262,30 @@ body {
     align-items: center;
     transition: 0.2s ease;
     text-decoration: none;
-
+}
+.btn2{
+    font-family: 'DM Serif Display', serif;
+    background-color: #a31521;
+    border: 2px solid #a31521;
+    color: #fff;
+    width: 11vw;
+    height: 6vh;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    text-decoration: none;
 }
 .btn1:hover{
     background-color: #a31521;
     cursor: pointer;
     border: 2px solid #a31521;
-
+}
+.btn2:hover{
+    background-color: #002e48;
+    cursor: pointer;
+    border: 2px solid #002e48;
 }
 .catering{
     height: 60vh;
@@ -313,7 +340,47 @@ body {
 }
 .carousel{
     width: 400vw;
-    height: 95vh;
+    height: 85vh;
     overflow-x: hidden;
     display: flex;
+}
+.slide{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-slide1{
+    background: url(https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/2c/a177c9479648c99cc3cdc58d5cc96d/:original) no-repeat center;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+}
+.carousel-slide2{
+    background: url(https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/0d/c06afe3575412ea41a27a7f0356281/:original) no-repeat center;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+}
+.carousel-slide3{
+    background: url(https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/80/9ed2ab348f4b18b2c922c182ed82c8/:original) no-repeat center;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+}
+.carousel-slide4{
+    background: url(https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/4b/2ae138a15d4ea0908dbeab5a27ca35/:original) no-repeat center;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+}
+.car{
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
 }
