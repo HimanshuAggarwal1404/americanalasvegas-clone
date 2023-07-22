@@ -162,6 +162,10 @@ body {
 .cls-11{
     fill: white;
 }
+.cls-21{
+    z-index: 3;
+    fill: #002e48;
+}
 .boxpattern2{
     width: 100vw !important;
     position: relative;
@@ -176,6 +180,7 @@ body {
     z-index: 3;
     object-fit:contain ;
 }
+
 .invert{
     transform: rotateY(180deg) rotateX(180deg);
 
@@ -338,22 +343,26 @@ body {
     z-index: 10;
     background-size: contain;
 }
+
 .carousel{
     width: 400vw;
-    height: 85vh;
+    height: 90vh;
     overflow-x: hidden;
     display: flex;
+    flex-direction: row;
+    transition: 1s ease;
 }
 .slide{
     position: relative;
     top: 0;
     width: 100vw;
     overflow: hidden;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-shadow: 10px 10px black;
 }
 .carousel-slide1{
     background: url(https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/2c/a177c9479648c99cc3cdc58d5cc96d/:original) no-repeat center;
@@ -383,4 +392,106 @@ body {
     color: white;
     font-size: 4rem;
     font-weight: 500;
+}
+.carouselWrapper{
+    overflow-y: hidden;
+    position: relative;
+}
+.dots{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 95vw;
+    height: 20vh;
+    z-index: 2;
+}
+.dot{
+    width: 1.2vw;
+    height: 1.2vw;
+    border: 2px solid white;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+.dot:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.stopPlay{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: scale(0%);
+    width: 5vw;
+    height: 20vh;
+    z-index: 2;
+    font-size: 2.5rem;
+    color: white;
+    
+}
+.controlBar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 20vh;
+    z-index: 2;
+    
+}
+.carouselWrapper:hover .stopPlay {
+    transform: scale(100%);
+    cursor: pointer;
+
+}
+.play,.pause{
+    width: 5vw;
+    height: 20vh;
+    z-index: 2;
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    transition: 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
+}
+.nodisplay{
+    display: none;
+}
+.flexdisplay{
+    display: flex;
+}
+.reservations{
+    background-color: #002e48;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    top: -3.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boxpattern4{
+    width: 100vw !important;
+    position: relative;
+    top: -3vh;
+    z-index: 3;
+    object-fit:contain ;
+}
+.boxpattern5{
+    width: 100vw !important;
+    position: relative;
+    top: -3.5vh;
+    z-index: 3;
+    object-fit:contain ;
+}
+.res{
+    color: white;
+}
+.resdesc{
+    font-family: 'Montserrat', sans-serif;
 }
