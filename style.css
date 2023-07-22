@@ -9,6 +9,14 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.americanavideo{
+    width: 100vw;
+    object-fit: contain;
+    overflow: hidden;
+}
+#video1 {
+    width: 100vw;
+}
 .background{
     position: absolute;
     overflow-y: scroll;
@@ -116,10 +124,7 @@ body {
     padding: 5px 10px;
 }
 
-#video1 {
-    width: 100%;
-    overflow: hidden;
-}
+
 
 .box {
     height: 10vh;
@@ -306,8 +311,8 @@ body {
     z-index: 10;
     background-size: contain;
 }
-.carousl{
-    width: 100vw;
+.carousel{
+    width: 400vw;
     height: 95vh;
     overflow-x: hidden;
     display: flex;
