@@ -21,7 +21,7 @@ body {
 }
 
 .background {
-    position: absolute;
+    position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
     background: url(Assets/about_us_back.jpg) no-repeat fixed center;
@@ -720,4 +720,64 @@ background-color: none;
 }
 .reviews-playpause i:hover{
     cursor: pointer;
+}
+.newsletter{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+.newsletter-content{
+    background-color: rgb(215,234,254);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-img{
+    background-color: rgb(215,234,254);
+    width: 50%;
+    height: 100%;
+}
+.newsheading{
+    font-size: 4rem;
+}
+.newsitalics{
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    color: #002e48;
+}
+.newsdesc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #000;
+    width: 70%;
+}
+.newsinput{
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+.newsinput input{
+width: 50%;
+height: 100%;
+border: none;
+outline: none;
+background-color:rgb(215,234,254);
+border-bottom:2px solid black;
+font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+color: #000;
+transition: 0.2s ease;
+}
+.newsinput input:active{
+    border-bottom:2px solid #a31521;
+
+}
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #000;
 }
