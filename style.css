@@ -662,7 +662,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-self: center;
+    align-items: center;
     color: black;
     font-size: 1.2rem;
     height: 30vh;
@@ -706,5 +706,18 @@ background-color: none;
 }
 .reviews-controlbar-dot:hover{
     background-color: #a31521;
+    cursor: pointer;
+}
+.reviews-playpause{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-playpause i{
+    margin:1vw;
+    font-size: 1.2rem;
+}
+.reviews-playpause i:hover{
     cursor: pointer;
 }
