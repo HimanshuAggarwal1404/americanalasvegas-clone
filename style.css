@@ -826,6 +826,7 @@ transition: 0.2s ease;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 2vw;
 }
 .time{
     height: 100%;
@@ -851,4 +852,28 @@ transition: 0.2s ease;
     flex-direction: column;
     justify-content: flex-start;
     height: 50%;   
+}
+.final-desc2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.final-desc2 i{
+    margin: 1vw;
+    padding: 0.3vw;
+    transition: 0.3s ease;
+}
+.final-desc2 i:hover{
+    background-color: white;
+    color: #a31521;
+    cursor: pointer;
+}
+.phone:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.phonenumber a{
+    text-decoration: none;
 }
