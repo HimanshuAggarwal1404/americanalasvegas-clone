@@ -231,14 +231,30 @@ body {
 
 
 }
-
+.navbar a{
+    text-decoration: none;
+}
 .hideright {
     transform: translateX(-50vw);
 }
+.hideleft {
+    transform: translateX(50vw);
+}
 
 .show {
-    transform: translateX(0vh);
+    transform: translateX(0vw);
 }
+.hidedown {
+    transform: translateY(50vh);
+}
+
+.showy {
+    transform: translateY(0vh);
+}
+.cat,.party{
+    transition: 0.6s ease;
+}
+
 
 .heading {
     color: black;
@@ -266,7 +282,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.8s ease;
+    transition: 0.3s ease;
     z-index: 0;
 
 }

@@ -130,6 +130,7 @@ const observer = new IntersectionObserver((entries) => {
     console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.remove("hideright");
+      
       entry.target.classList.add("show");
     }
   });
@@ -137,6 +138,21 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".abt");
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("hidedown");
+      entry.target.classList.add("showy");
+    }
+  });
+});
+
+const hiddenElements1 = document.querySelectorAll(".cat");
+hiddenElements1.forEach((el) => observer1.observe(el));
+
 
 document.getElementById("dot1").addEventListener("click", () => {
   carouselPosition = 0;
